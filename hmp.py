@@ -5,6 +5,10 @@ import numpy as np
 from numpy import pi, log
 from scipy.special import digamma
 
+#################################################
+## Need to ensure vectors are treated as np array like in order to do element-wise division etc
+#################################################
+
 def hmp_stat(p, w=None):
     if w is None:
         return 1/np.mean(1/p)
